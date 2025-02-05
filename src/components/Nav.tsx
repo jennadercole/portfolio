@@ -3,22 +3,22 @@ import Link from "next/link";
 const NavLinks = () => {
     return (
         <>
-            <Link className="text-xl p-2 hover:bg-black hover:font-bold" href="/about">about</Link>
-            <Link className="text-xl p-2 hover:bg-black hover:font-bold" href="/projects">projects</Link>
-            <Link className="text-xl p-2 hover:bg-black hover:font-bold" href="/contact">contact me</Link>
+            <Link className="text-4xl p-12 transition-transform hover:scale-125" href="/">home</Link>
+            <Link className="text-4xl p-12 transition-transform hover:scale-125" href="/projects">projects</Link>
+            <Link className="text-4xl p-12 transition-transform hover:scale-125" href="/writing">writing</Link>
+            <Link className="text-4xl p-12 transition-transform hover:scale-125" href="/about">about</Link>
+            <Link className="text-4xl p-12 transition-transform hover:scale-125" href="/contact">contact me</Link>
         </>
     );
 };
 
 const Nav = () => {
-    //make mobile friendly? toggle hanbaobao menu
-
-    return (
-        <nav className="w-1/3 flex justify-end">
-            <div className="hidden w-full justify-between md:flex">
-                <NavLinks />
-            </div>
-        </nav>
+    return (<>
+        <div></div>
+        <div className="w-full justify-end flex space-x-8 md:flex">
+            <NavLinks />
+        </div>
+    </>
     );
 };
 

@@ -1,8 +1,14 @@
 import Nav from "./Nav"
+import { Jost } from "next/font/google";
+
+const jost = Jost({
+    subsets: ["latin"],
+    weight: "200"
+});
 
 export default function Header() {
     return <>
-        <header className="bg-background top-0 z-[20] mx-auto flex w-full justify-end border-gray-400 p-14">
+        <header className={`${jost.className} flex w-full justify-end p-12 text-lg`}>
             <Nav />
         </header>
     </>
